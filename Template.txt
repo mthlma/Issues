@@ -1,0 +1,54 @@
+Device Model #: XT1683
+
+Device Shipping Name: Moto G5 Plus
+
+Device Codename: potter
+
+Stock Android Version: 8.1.0
+
+Android Version You Are Building: 11
+
+ROM You Are Building: LineageOS
+
+ROM Github Organization: https://github.com/LineageOS/android
+
+Device Repo: 
+https://github.com/mthlma/android_device_motorola_potter-lineage-18.1/tree/lineage-18.1-com: branch "lineage=18.1-com"
+https://github.com/mthlma/device_motorola_msm8953-common/tree/potter: branch "potter2"
+
+Kernel Repo: 
+https://github.com/mthlma/kernel_motorola_msm8953-proximity/tree/potter: branch "potter"
+
+Vendor Repo: 
+https://github.com/mthlma/proprietary_vendor_motorola_potter: branch "dot11"
+https://github.com/mthlma/proprietary_vendor_motorola_potter: branch "dot11"
+
+Other Repos: 
+https://github.com/LineageOS/android_system_qcom
+
+Issues:
+- Sensors
+- Audio
+- Camera
+- Fingerprint sensor
+
+List Of Things You Have Tried To Do To Try And Resolve This Error: 
+Sensors:
+- Set correct permissions on "init.mmi.rc" inside rootdir folder for sensors, by kanging https://github.com/dotOS-Devices/device_motorola_potter/blob/dot11/rootdir/etc/init.mmi.rc
+- Link vendor/firmware/sensorhubfw.bin (path was wrong before)
+- Fix denials related to sensorhub on sepolicy
+- Add missing sensor related lines on BoardConfig.mk and device.mk (https://github.com/mthlma/android_device_motorola_potter-lineage-18.1/commit/30e1a049d91a64f83eab8d779ce132019cfb1c4d)
+- Import configs (https://github.com/mthlma/android_device_motorola_potter-lineage-18.1/tree/lineage-18.1/configs/sensors)
+- I tried to make it copy only motosh on device.mk, but with no success as well
+Audio:
+- I tried this commit: https://github.com/dotOS-Devices/device_motorola_potter/commit/5d5638449700b9d287da12e16bb62f3ae9469d2c
+- I deleted some configs that I didn't see in other trees but that makes headphones to not work and doesn't fix my issue
+- I saw on logs there was a service for android.hardware.audio.service, but correct version was 2.0 so I tried to build android.hardware.audio-@2.0.service, I but it was still building wrong audio service. I can try this again later
+Camera:
+- I tried to take some camera blobs from https://github.com/JarlPenguin/proprietary_vendor_motorola-1 (I saw deen blobs in similar devices)
+- I tried to kang missing blobs, but it was just asking more and more on logs (I can make a build later if it's the case)
+Fingerprint:
+- Tried to use same ones from sanders, as it's a similar device https://github.com/mthlma/device_motorola_sanders
+- It was working before somehow, but it decided to not work anymore, I don't know why
+General: 
+- I tried to look everything on kernel side, based on old kernel (https://github.com/dotOS-Devices/android_kernel_motorola_potter) but everything seems already merged
