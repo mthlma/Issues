@@ -1,0 +1,302 @@
+[  2% 3278/113301] Building Kernel Config
+make: Entering directory '/home/giv/los/kernel/motorola/msm8953'
+make[1]: Entering directory '/home/giv/los/out/target/product/sanders/obj/KERNEL
+_OBJ'
+  GEN     ./Makefile
+  HOSTCC  scripts/basic/fixdep
+  HOSTCC  scripts/kconfig/conf.o
+  SHIPPED scripts/kconfig/zconf.tab.c
+  SHIPPED scripts/kconfig/zconf.lex.c
+  SHIPPED scripts/kconfig/zconf.hash.c
+clang-11: warning: argument unused during compilation: '-fuse-ld=lld' [-Wunused-
+command-line-argument]
+  HOSTCC  scripts/kconfig/zconf.tab.o
+clang-11: warning: argument unused during compilation: '-fuse-ld=lld' [-Wunused-
+command-line-argument]
+  HOSTLD  scripts/kconfig/conf
+arch/arm64/configs/sanders_defconfig:719:warning: override: reassigning to symbo
+l NFC_NQ
+#
+# configuration written to .config
+#
+make[1]: Leaving directory '/home/giv/los/out/target/product/sanders/obj/KERNEL_
+OBJ'
+make: Leaving directory '/home/giv/los/kernel/motorola/msm8953'
+make: Entering directory '/home/giv/los/kernel/motorola/msm8953'
+make[1]: Entering directory '/home/giv/los/out/target/product/sanders/obj/KERNEL
+_OBJ'
+  GEN     ./Makefile
+scripts/kconfig/conf  --savedefconfig=defconfig Kconfig
+make[1]: Leaving directory '/home/giv/los/out/target/product/sanders/obj/KERNEL_
+OBJ'
+make: Leaving directory '/home/giv/los/kernel/motorola/msm8953'
+[  4% 4690/113301] Target product buildinfo: out/target/product/sanders/system/p
+Target product properties from: device/motorola/msm8953-common/product.prop
+[  4% 4857/113301] build out/target/product/sanders/system/etc/event-log-tags
+frameworks/base/services/core/java/com/android/server/wm/EventLogTags.logtags:39
+: warning: tag "wm_on_paused_called" (30021) duplicated in frameworks/base/core/
+java/android/app/EventLogTags.logtags:9
+frameworks/base/services/core/java/com/android/server/wm/EventLogTags.logtags:41
+: warning: tag "wm_on_resume_called" (30022) duplicated in frameworks/base/core/
+java/android/app/EventLogTags.logtags:11
+frameworks/base/services/core/java/com/android/server/wm/EventLogTags.logtags:50
+: warning: tag "wm_stop_activity" (30048) duplicated in frameworks/base/core/jav
+a/android/app/EventLogTags.logtags:14
+frameworks/base/services/core/java/com/android/server/wm/EventLogTags.logtags:56
+: warning: tag "wm_add_to_stopping" (30066) duplicated in frameworks/base/core/j
+ava/android/app/EventLogTags.logtags:35
+packages/services/Car/tests/CarDeveloperOptions/src/com/android/car/developeropt
+ions/EventLogTags.logtags:6: warning: tag "lock_screen_type" (90200) duplicated 
+in packages/apps/Settings/src/com/android/settings/EventLogTags.logtags:6
+packages/services/Car/tests/CarDeveloperOptions/src/com/android/car/developeropt
+ions/EventLogTags.logtags:9: warning: tag "exp_det_device_admin_activated_by_use
+r" (90201) duplicated in packages/apps/Settings/src/com/android/settings/EventLo
+gTags.logtags:9
+packages/services/Car/tests/CarDeveloperOptions/src/com/android/car/developeropt
+ions/EventLogTags.logtags:12: warning: tag "exp_det_device_admin_declined_by_use
+r" (90202) duplicated in packages/apps/Settings/src/com/android/settings/EventLo
+gTags.logtags:12
+packages/services/Car/tests/CarDeveloperOptions/src/com/android/car/developeropt
+ions/EventLogTags.logtags:15: warning: tag "exp_det_device_admin_uninstalled_by_
+user" (90203) duplicated in packages/apps/Settings/src/com/android/settings/Even
+tLogTags.logtags:15
+packages/services/Car/tests/CarDeveloperOptions/src/com/android/car/developeropt
+ions/EventLogTags.logtags:18: warning: tag "settings_latency" (90204) duplicated
+ in packages/apps/Settings/src/com/android/settings/EventLogTags.logtags:18
+[  5% 6032/113301] Target odm buildinfo: out/target/product/sanders/vendor/odm/e
+Target odm properties from: device/motorola/msm8953-common/odm.prop
+[  6% 7162/113301] //vendor/lineage/build/soong:generated_kernel_includes genera
+make: Entering directory '/home/giv/los/kernel/motorola/msm8953'
+make[1]: Entering directory '/home/giv/los/out/soong/.temp/sbox159945120'
+  CHK     include/generated/uapi/linux/version.h
+  UPD     include/generated/uapi/linux/version.h
+  HOSTCC  scripts/basic/fixdep
+  WRAP    arch/arm64/include/generated/asm/bugs.h
+  WRAP    arch/arm64/include/generated/asm/clkdev.h
+  WRAP    arch/arm64/include/generated/asm/cputime.h
+  WRAP    arch/arm64/include/generated/asm/delay.h
+  WRAP    arch/arm64/include/generated/asm/div64.h
+  WRAP    arch/arm64/include/generated/asm/dma.h
+  WRAP    arch/arm64/include/generated/asm/dma-contiguous.h
+  WRAP    arch/arm64/include/generated/asm/early_ioremap.h
+  WRAP    arch/arm64/include/generated/asm/emergency-restart.h
+  WRAP    arch/arm64/include/generated/asm/errno.h
+  WRAP    arch/arm64/include/generated/asm/hw_irq.h
+  WRAP    arch/arm64/include/generated/asm/ioctl.h
+  WRAP    arch/arm64/include/generated/asm/ioctls.h
+  WRAP    arch/arm64/include/generated/asm/ipcbuf.h
+  WRAP    arch/arm64/include/generated/asm/kdebug.h
+  WRAP    arch/arm64/include/generated/asm/irq_regs.h
+  WRAP    arch/arm64/include/generated/asm/kmap_types.h
+  WRAP    arch/arm64/include/generated/asm/kvm_para.h
+  WRAP    arch/arm64/include/generated/asm/local.h
+  WRAP    arch/arm64/include/generated/asm/local64.h
+  WRAP    arch/arm64/include/generated/asm/mcs_spinlock.h
+  WRAP    arch/arm64/include/generated/asm/mm-arch-hooks.h
+  WRAP    arch/arm64/include/generated/asm/mman.h
+  WRAP    arch/arm64/include/generated/asm/msgbuf.h
+  WRAP    arch/arm64/include/generated/asm/msi.h
+  WRAP    arch/arm64/include/generated/asm/mutex.h
+  WRAP    arch/arm64/include/generated/asm/poll.h
+  WRAP    arch/arm64/include/generated/asm/preempt.h
+  WRAP    arch/arm64/include/generated/asm/resource.h
+  WRAP    arch/arm64/include/generated/asm/qrwlock.h
+  WRAP    arch/arm64/include/generated/asm/rwsem.h
+  WRAP    arch/arm64/include/generated/asm/segment.h
+  WRAP    arch/arm64/include/generated/asm/sembuf.h
+  WRAP    arch/arm64/include/generated/asm/serial.h
+  WRAP    arch/arm64/include/generated/asm/shmbuf.h
+  WRAP    arch/arm64/include/generated/asm/simd.h
+  WRAP    arch/arm64/include/generated/asm/sizes.h
+  WRAP    arch/arm64/include/generated/asm/socket.h
+  WRAP    arch/arm64/include/generated/asm/sockios.h
+  WRAP    arch/arm64/include/generated/asm/swab.h
+  WRAP    arch/arm64/include/generated/asm/switch_to.h
+  WRAP    arch/arm64/include/generated/asm/termbits.h
+  WRAP    arch/arm64/include/generated/asm/termios.h
+  WRAP    arch/arm64/include/generated/asm/trace_clock.h
+  WRAP    arch/arm64/include/generated/asm/types.h
+  WRAP    arch/arm64/include/generated/asm/unaligned.h
+  WRAP    arch/arm64/include/generated/asm/user.h
+  WRAP    arch/arm64/include/generated/asm/vga.h
+  WRAP    arch/arm64/include/generated/asm/xor.h
+  WRAP    arch/arm64/include/generated/uapi/asm/kvm_para.h
+  HOSTCC  scripts/unifdef
+  INSTALL usr/include/asm-generic/ (35 files)
+  INSTALL usr/include/mtd/ (5 files)
+  INSTALL usr/include/misc/ (1 file)
+  INSTALL usr/include/drm/ (23 files)
+  INSTALL usr/include/rdma/ (14 files)
+  INSTALL usr/include/miniISP/ (1 file)
+  INSTALL usr/include/media/ (43 files)
+  INSTALL usr/include/linux/ (483 files)
+  INSTALL usr/include/scsi/ (6 files)
+  INSTALL usr/include/sound/ (15 files)
+  INSTALL usr/include/video/ (5 files)
+  INSTALL usr/include/scsi/fc/ (4 files)
+  INSTALL usr/include/xen/ (4 files)
+  INSTALL usr/include/scsi/ufs/ (2 files)
+  INSTALL usr/include/rdma/hfi/ (1 file)
+  INSTALL usr/include/linux/android/ (1 file)
+  INSTALL usr/include/linux/byteorder/ (2 files)
+  INSTALL usr/include/linux/caif/ (2 files)
+  INSTALL usr/include/linux/can/ (5 files)
+  INSTALL usr/include/linux/cifs/ (0 file)
+  INSTALL usr/include/linux/genwqe/ (0 file)
+  INSTALL usr/include/linux/dvb/ (8 files)
+  INSTALL usr/include/linux/hdlc/ (1 file)
+  INSTALL usr/include/linux/hsi/ (2 files)
+  INSTALL usr/include/linux/iio/ (2 files)
+  INSTALL usr/include/linux/isdn/ (1 file)
+  INSTALL usr/include/linux/mfd/ (1 file)
+  INSTALL usr/include/linux/mfd/wcd9xxx/ (2 files)
+  INSTALL usr/include/linux/mmc/ (3 files)
+  INSTALL usr/include/linux/netfilter/ (87 files)
+  INSTALL usr/include/linux/netfilter_arp/ (2 files)
+  INSTALL usr/include/linux/netfilter_bridge/ (17 files)
+  INSTALL usr/include/linux/netfilter_ipv4/ (10 files)
+  INSTALL usr/include/linux/netfilter_ipv6/ (12 files)
+  INSTALL usr/include/linux/nfc/ (1 file)
+  INSTALL usr/include/linux/nfsd/ (5 files)
+  INSTALL usr/include/linux/raid/ (2 files)
+  INSTALL usr/include/linux/spi/ (1 file)
+  INSTALL usr/include/linux/sunrpc/ (1 file)
+  INSTALL usr/include/linux/tc_act/ (14 files)
+  INSTALL usr/include/linux/tc_ematch/ (4 files)
+  INSTALL usr/include/linux/usb/ (12 files)
+  INSTALL usr/include/linux/wimax/ (1 file)
+  INSTALL usr/include/linux/netfilter/ipset/ (4 files)
+  INSTALL usr/include/asm/ (37 files)
+  INSTALL usr/techpack/ (0 file)
+  INSTALL usr/techpack/stub/ (0 file)
+  INSTALL usr/techpack/audio/ (0 file)
+  INSTALL usr/techpack/stub/include/ (0 file)
+make[5]: Nothing to be done for '__headers'.
+  INSTALL usr/techpack/audio/config/ (6 files)
+  INSTALL usr/techpack/audio/include/ (0 file)
+  INSTALL usr/techpack/audio/include/asoc/ (1 file)
+  INSTALL usr/techpack/audio/include/dsp/ (15 files)
+  INSTALL usr/techpack/audio/include/ipc/ (3 files)
+  INSTALL usr/techpack/audio/include/soc/ (4 files)
+  INSTALL usr/techpack/audio/asoc/ (18 files)
+  INSTALL usr/techpack/audio/soc/ (4 files)
+  INSTALL usr/techpack/audio/dsp/ (7 files)
+  INSTALL usr/techpack/audio/include/sound/ (1 file)
+  INSTALL usr/techpack/audio/ipc/ (0 file)
+  INSTALL usr/techpack/audio/include/linux/ (18 files)
+  REMOVE  ospl2xx.h
+  INSTALL usr/techpack/audio/include/sound/ (7 files)
+  INSTALL usr/techpack/audio/asoc/codecs/ (33 files)
+  INSTALL usr/techpack/audio/dsp/codecs/ (3 files)
+  INSTALL usr/techpack/audio/asoc/codecs/msm_bg/ (2 files)
+  INSTALL usr/techpack/audio/asoc/codecs/msm_sdw/ (2 files)
+  INSTALL usr/techpack/audio/asoc/codecs/sdm660_cdc/ (6 files)
+  INSTALL usr/techpack/audio/asoc/codecs/wcd934x/ (6 files)
+make[1]: Leaving directory '/home/giv/los/out/soong/.temp/sbox159945120'
+make: Leaving directory '/home/giv/los/kernel/motorola/msm8953'
+[  9% 10995/113301] //bionic/libc:libc_bionic clang arch-arm/generic/bionic/memc
+bionic/libc/arch-arm/generic/bionic/memcmp.S:99:9: warning: applying IT instruct
+ion to more than one subsequent instruction is deprecated
+        ittt eq
+        ^
+[  9% 11048/113301] //bionic/libc:libc_bionic clang arch-arm/generic/bionic/memc
+bionic/libc/arch-arm/generic/bionic/memcmp.S:99:9: warning: applying IT instruct
+ion to more than one subsequent instruction is deprecated
+        ittt eq
+        ^
+[ 11% 13369/113301] //bionic/libc:libc.llndk versioner preprocess include
+warning: attempted to generate guard with empty availability: obsoleted = 21
+warning: attempted to generate guard with empty availability: obsoleted = 23
+[ 11% 13399/113301] //bionic/libc:libc.llndk versioner preprocess include
+warning: attempted to generate guard with empty availability: obsoleted = 21
+warning: attempted to generate guard with empty availability: obsoleted = 23
+[ 11% 13400/113301] //bionic/libc:libc.llndk versioner preprocess include [arm]
+warning: attempted to generate guard with empty availability: obsoleted = 21
+warning: attempted to generate guard with empty availability: obsoleted = 23
+[ 11% 13558/113301] target  C++: libOmxVdec <= hardware/qcom-caf/msm8996/media/m
+FAILED: out/target/product/sanders/obj/SHARED_LIBRARIES/libOmxVdec_intermediates
+/src/omx_vdec_v4l2.o
+/bin/bash -c "PWD=/proc/self/cwd  prebuilts/clang/host/linux-x86/clang-r383902b1
+/bin/clang++ -I hardware/qcom-caf/msm8996/media/mm-video-v4l2/vidc/vdec/inc -I h
+ardware/qcom-caf/msm8996/media/mm-video-v4l2/vidc/common/inc -I hardware/qcom-ca
+f/msm8996/media/mm-core/inc -I out/target/product/sanders/obj/include/adreno -I 
+hardware/qcom-caf/msm8996/media/libc2dcolorconvert -I hardware/qcom-caf/msm8996/
+media/hypv-intercept -I out/target/product/sanders/obj/include/mm-video/SwVdec -
+I out/target/product/sanders/obj/include/mm-video/swvdec -I hardware/qcom-caf/ms
+m8996/media/mm-video-v4l2/vidc/vdec -I out/target/product/sanders/obj/SHARED_LIB
+RARIES/libOmxVdec_intermediates -I out/target/product/sanders/gen/SHARED_LIBRARI
+ES/libOmxVdec_intermediates  -Isystem/core/liblog/include_vndk -Isystem/core/lib
+cutils/include_vndk -Isystem/core/libprocessgroup/include -Isystem/core/libcutil
+s/include    -Iexternal/libcxx/include -Iexternal/libcxxabi/include -isystem out
+/soong/.intermediates/bionic/libc/libc.llndk/android_vendor.30_arm64_armv8-a_sha
+red/gen/include -isystem bionic/libc/kernel/android/scsi -isystem bionic/libc/ke
+rnel/android/uapi -isystem bionic/libc/kernel/uapi -isystem bionic/libc/kernel/u
+api/asm-arm64    -Iexternal/libcxxabi/include  -Iframeworks/native/headers/media
+_plugin -Iframeworks/native/headers/media_plugin/media/openmax -Iframeworks/av/m
+edia/libstagefright/include -Isystem/core/libcutils/include_vndk -Isystem/core/l
+ibutils/include -Isystem/core/libbacktrace/include -Isystem/core/liblog/include_
+vndk -Isystem/core/libsystem/include -Isystem/core/libprocessgroup/include -Ifra
+meworks/av/media/libstagefright/foundation/include -Iframeworks/native/libs/nati
+vebase/include -Isystem/core/libutils/include -Isystem/core/libbacktrace/include
+ -Isystem/core/liblog/include_vndk -Isystem/core/libsystem/include -Isystem/core
+/libcutils/include_vndk -Isystem/core/libprocessgroup/include -Ihardware/libhard
+ware/include -Isystem/media/audio/include -Isystem/core/libcutils/include_vndk -
+Isystem/core/libsystem/include -Isystem/bt/types -Ihardware/qcom-caf/msm8996/dis
+play/include -Ihardware/qcom-caf/msm8996/display/libcopybit -Ihardware/qcom-caf/
+msm8996/display/libdrmutils -Ihardware/qcom-caf/msm8996/display/libqdutils -Ihar
+dware/qcom-caf/msm8996/display/libqservice -Ihardware/qcom-caf/msm8996/display/g
+pu_tonemapper -Ihardware/qcom-caf/msm8996/display/sdm/include -Ihardware/qcom-ca
+f/msm8996/display/gralloc -Ihardware/libhardware/include -Isystem/media/audio/in
+clude -Isystem/core/libcutils/include_vndk -Isystem/core/libsystem/include -Isys
+tem/bt/types -Iout/soong/.intermediates/vendor/lineage/build/soong/generated_ker
+nel_includes/gen/usr/audio/include/uapi -Iout/soong/.intermediates/vendor/lineag
+e/build/soong/generated_kernel_includes/gen/usr/include -Iout/soong/.intermediat
+es/vendor/lineage/build/soong/generated_kernel_includes/gen/usr/include/audio -I
+out/soong/.intermediates/vendor/lineage/build/soong/generated_kernel_includes/ge
+n/usr/include/audio/include/uapi -Iout/soong/.intermediates/vendor/lineage/build
+/soong/generated_kernel_includes/gen/usr/techpack/audio/include   -isystem out/t
+arget/product/sanders/obj/include -c  -Werror=implicit-function-declaration -DAN
+DROID -fmessage-length=0 -W -Wall -Wno-unused -Winit-self -Wpointer-arith -no-ca
+nonical-prefixes -DNDEBUG -UDEBUG -fno-exceptions -Wno-multichar -O2 -g -fno-str
+ict-aliasing -Werror=date-time -Werror=pragma-pack -Werror=pragma-pack-suspiciou
+s-include -fdebug-prefix-map=/proc/self/cwd= -D__compiler_offsetof=__builtin_off
+setof -faddrsig -Werror=int-conversion -fexperimental-new-pass-manager -Wno-rese
+rved-id-macro -Wno-unused-command-line-argument -fcolor-diagnostics -Wno-sign-co
+mpare -Wno-defaulted-function-deleted -Wno-inconsistent-missing-override -Wno-c9
+9-designator -ftrivial-auto-var-init=zero -enable-trivial-auto-var-init-zero-kno
+wing-it-will-be-removed-from-clang -ffunction-sections -fdata-sections -fno-shor
+t-enums -funwind-tables -fstack-protector-strong -Wa,--noexecstack -D_FORTIFY_SO
+URCE=2 -Wstrict-aliasing=2 -Werror=return-type -Werror=non-virtual-dtor -Werror=
+address -Werror=sequence-point -Werror=format-security -nostdlibinc -march=armv8
+-a  -Bprebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/aarch64-linux-an
+droid/bin  -Wsign-promo -Wimplicit-fallthrough -D_LIBCPP_ENABLE_THREAD_SAFETY_AN
+NOTATIONS -Wno-gnu-include-next -fvisibility-inlines-hidden  -std=gnu++17   -fno
+-rtti -D__alignx\\(x\\)=__attribute__\\(\\(__aligned__\\(x\\)\\)\\) -D__align=__
+alignx -Dinline=__inline -g -O3 -DIMAGE_APPS_PROC -D_ANDROID_ -DCDECL -DT_ARM -D
+NO_ARM_CLZ -UENABLE_DEBUG_LOW -UENABLE_DEBUG_HIGH -DENABLE_DEBUG_ERROR -UINPUT_B
+UFFER_LOG -UOUTPUT_BUFFER_LOG -Wno-parentheses -D_ANDROID_ICS_ -D_MSM8974_ -DPRO
+CESS_EXTRADATA_IN_OUTPUT_PORT -DMAX_RES_1080P -DMAX_RES_1080P_EBI -D_UBWC_ -DUSE
+_ION -D_ANDROID_O_MR1_DIVX_CHANGES -DHEVC_PROFILE_HDR10_NOT_SUPPORTED -D_QUERY_D
+ISP_RES_ -DADAPTIVE_PLAYBACK_SUPPORTED -DFLEXYUV_SUPPORTED -DALLOCATE_OUTPUT_NAT
+IVEHANDLE -DMAX_H264_LEVEL_51 -Werror -DDO_NOT_CHECK_MANUAL_BINDER_INTERFACES -D
+__ANDROID_VNDK__ -fPIC -DANDROID_STRICT -target aarch64-linux-android30   -Werro
+r=int-to-pointer-cast -Werror=pointer-to-int-cast -Werror=fortify-source -Werror
+=address-of-temporary -Werror=return-type -Wno-tautological-constant-compare -Wn
+o-tautological-type-limit-compare -Wno-reorder-init-list -Wno-implicit-int-float
+-conversion -Wno-int-in-bool-context -Wno-sizeof-array-div -Wno-tautological-ove
+rlap-compare -Wno-deprecated-copy -Wno-range-loop-construct -Wno-misleading-inde
+ntation -Wno-zero-as-null-pointer-constant -Wno-deprecated-anon-enum-enum-conver
+sion -Wno-deprecated-enum-enum-conversion -Wno-string-compare -Wno-enum-enum-con
+version -Wno-enum-float-conversion -Wno-pessimizing-move  -MD -MF out/target/pro
+duct/sanders/obj/SHARED_LIBRARIES/libOmxVdec_intermediates/src/omx_vdec_v4l2.d -
+o out/target/product/sanders/obj/SHARED_LIBRARIES/libOmxVdec_intermediates/src/o
+mx_vdec_v4l2.o hardware/qcom-caf/msm8996/media/mm-video-v4l2/vidc/vdec/src/omx_v
+dec_v4l2.cpp"
+hardware/qcom-caf/msm8996/media/mm-video-v4l2/vidc/vdec/src/omx_vdec_v4l2.cpp:40
+96:25: error: enumeration value 'V4L2_MPEG_VIDEO_H264_LEVEL_UNKNOWN' not handled
+ in switch [-Werror,-Wswitch]
+                switch ((enum v4l2_mpeg_video_h264_level)level_control.value) {
+                        ^
+1 error generated.
+10:47:02 ninja failed with: exit status 1
+
